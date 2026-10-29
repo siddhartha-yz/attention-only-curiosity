@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14",
+  "torch": "2.14.0+cu130",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+}

@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "attention_matched",
+  "seed": 1,
+  "config": {
+    "task": "language",
+    "variant": "attention_matched",
+    "width": 64,
+    "layers": 6,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 111616,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.55195178091526,
+      "n": 65536,
+      "accuracy": 0.00628662109375,
+      "bits_per_character": 6.567078260692131
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.43709387402122957,
+      "loss": 2.4982294514775276,
+      "n": 65536,
+      "accuracy": 0.283660888671875,
+      "bits_per_character": 3.6041832406493843
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.8733082899816509,
+      "loss": 2.318919062614441,
+      "n": 65536,
+      "accuracy": 0.3203582763671875,
+      "bits_per_character": 3.3454930318567375
+    },
+    {
+      "step": 600,
+      "train_seconds": 1.3110515769731137,
+      "loss": 2.2395317927002907,
+      "n": 65536,
+      "accuracy": 0.34210205078125,
+      "bits_per_character": 3.2309614112418794
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.7518815500079654,
+      "loss": 2.2028085589408875,
+      "n": 65536,
+      "accuracy": 0.3530120849609375,
+      "bits_per_character": 3.177980984011782
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 1.7518815500079654,
+    "loss": 2.2028085589408875,
+    "n": 65536,
+    "accuracy": 0.3530120849609375,
+    "bits_per_character": 3.177980984011782
+  },
+  "training_seconds": 1.7518815500079654,
+  "wall_seconds": 1.8351802770012,
+  "peak_allocated_mib": 99.3994140625,
+  "train_probe": {
+    "loss": 2.1548410058021545,
+    "n": 16384,
+    "accuracy": 0.36944580078125,
+    "bits_per_character": 3.1087784329749546
+  },
+  "sample": "ROMEO:\nConeve, if of the heat sou chormallo; we blake my\nThin lore be hack and thath he hal thes blonce,\nAnd at rdat wore and mound for giother,\nAnd hor my hath whe derd'ste he mard and sutthery tears as dean\nAnd pank lith hourche am fobld nor you",
+  "checkpoint": "results/checkpoints/language_attention_matched_1.pt",
+  "reload_loss_error": 0.0
+}

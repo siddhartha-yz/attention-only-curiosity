@@ -1,0 +1,162 @@
+{
+  "absolute": {
+    "standard": {
+      "metric": "loss",
+      "mean": 0.0007995258479605823,
+      "sample_std": 0.0007721298528962585,
+      "values": [
+        0.00026013169969831197,
+        0.00045442622858327586,
+        0.001684019615600159
+      ],
+      "parameters": 24673,
+      "training_seconds_mean": 0.5973095210186633,
+      "peak_allocated_mib_max": 91.5556640625,
+      "reload_loss_error_max": 0.0
+    },
+    "attention": {
+      "metric": "loss",
+      "mean": 0.08352423587561528,
+      "sample_std": 8.98534386195973e-06,
+      "values": [
+        0.08352307482556506,
+        0.08353374530742695,
+        0.0835158874938538
+      ],
+      "parameters": 8289,
+      "training_seconds_mean": 0.44895249931263,
+      "peak_allocated_mib_max": 91.0556640625,
+      "reload_loss_error_max": 0.0
+    },
+    "memory": {
+      "metric": "loss",
+      "mean": 0.0005707766983535263,
+      "sample_std": 8.100949787286484e-05,
+      "values": [
+        0.000549566495668638,
+        0.0006602813194800805,
+        0.0005024822799118606
+      ],
+      "parameters": 24673,
+      "training_seconds_mean": 1.4445366159901216,
+      "peak_allocated_mib_max": 115.3701171875,
+      "reload_loss_error_max": 0.0
+    }
+  },
+  "lookup": {
+    "standard": {
+      "metric": "accuracy",
+      "mean": 1.0,
+      "sample_std": 0.0,
+      "values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parameters": 101824,
+      "training_seconds_mean": 1.6224935846536634,
+      "peak_allocated_mib_max": 94.75732421875,
+      "reload_loss_error_max": 0.0
+    },
+    "attention": {
+      "metric": "accuracy",
+      "mean": 1.0,
+      "sample_std": 0.0,
+      "values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parameters": 36032,
+      "training_seconds_mean": 1.2769066520158958,
+      "peak_allocated_mib_max": 89.80029296875,
+      "reload_loss_error_max": 0.0
+    },
+    "attention_matched": {
+      "metric": "accuracy",
+      "mean": 0.7903645833333334,
+      "sample_std": 0.3630991927325381,
+      "values": [
+        1.0,
+        0.37109375,
+        1.0
+      ],
+      "parameters": 102080,
+      "training_seconds_mean": 2.2671574673477153,
+      "peak_allocated_mib_max": 100.61865234375,
+      "reload_loss_error_max": 0.0
+    },
+    "memory": {
+      "metric": "accuracy",
+      "mean": 0.3628743489583333,
+      "sample_std": 0.00662936583802614,
+      "values": [
+        0.362060546875,
+        0.369873046875,
+        0.356689453125
+      ],
+      "parameters": 101568,
+      "training_seconds_mean": 3.7339719300301417,
+      "peak_allocated_mib_max": 140.8544921875,
+      "reload_loss_error_max": 0.0
+    }
+  },
+  "language": {
+    "standard": {
+      "metric": "bits_per_character",
+      "mean": 2.983828626484724,
+      "sample_std": 0.030430954250832795,
+      "values": [
+        2.961002587446147,
+        2.9721057013945242,
+        3.0183775906135004
+      ],
+      "parameters": 111360,
+      "training_seconds_mean": 1.2280398510083614,
+      "peak_allocated_mib_max": 95.2333984375,
+      "reload_loss_error_max": 0.0
+    },
+    "attention": {
+      "metric": "bits_per_character",
+      "mean": 3.2546329671537046,
+      "sample_std": 0.02048760175675772,
+      "values": [
+        3.231150248192527,
+        3.2638917355712573,
+        3.2688569176973292
+      ],
+      "parameters": 45568,
+      "training_seconds_mean": 0.9668621666472367,
+      "peak_allocated_mib_max": 85.94287109375,
+      "reload_loss_error_max": 0.0
+    },
+    "attention_matched": {
+      "metric": "bits_per_character",
+      "mean": 3.1525369319045025,
+      "sample_std": 0.03918809171899527,
+      "values": [
+        3.1074087846413145,
+        3.177980984011782,
+        3.1722210270604103
+      ],
+      "parameters": 111616,
+      "training_seconds_mean": 1.757864288334531,
+      "peak_allocated_mib_max": 99.3994140625,
+      "reload_loss_error_max": 0.0
+    },
+    "memory": {
+      "metric": "bits_per_character",
+      "mean": 3.3187751794969267,
+      "sample_std": 0.034952207959894836,
+      "values": [
+        3.286322078359918,
+        3.314223038787705,
+        3.355780421343157
+      ],
+      "parameters": 111104,
+      "training_seconds_mean": 1.2761890717229107,
+      "peak_allocated_mib_max": 101.8701171875,
+      "reload_loss_error_max": 0.0
+    }
+  }
+}

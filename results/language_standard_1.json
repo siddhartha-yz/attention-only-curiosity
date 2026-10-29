@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "standard",
+  "seed": 1,
+  "config": {
+    "task": "language",
+    "variant": "standard",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 111360,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.387266293168068,
+      "n": 65536,
+      "accuracy": 0.009979248046875,
+      "bits_per_character": 6.329487324212877
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.3078554900093877,
+      "loss": 2.383510932326317,
+      "n": 65536,
+      "accuracy": 0.3033599853515625,
+      "bits_per_character": 3.438679401971807
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.6155020210280782,
+      "loss": 2.2128824964165688,
+      "n": 65536,
+      "accuracy": 0.348236083984375,
+      "bits_per_character": 3.192514603650173
+    },
+    {
+      "step": 600,
+      "train_seconds": 0.9239695860087522,
+      "loss": 2.110397845506668,
+      "n": 65536,
+      "accuracy": 0.374725341796875,
+      "bits_per_character": 3.044660506015223
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.2323512970069714,
+      "loss": 2.060106687247753,
+      "n": 65536,
+      "accuracy": 0.387176513671875,
+      "bits_per_character": 2.9721057013945242
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 1.2323512970069714,
+    "loss": 2.060106687247753,
+    "n": 65536,
+    "accuracy": 0.387176513671875,
+    "bits_per_character": 2.9721057013945242
+  },
+  "training_seconds": 1.2323512970069714,
+  "wall_seconds": 1.2911350479989778,
+  "peak_allocated_mib": 95.2333984375,
+  "train_probe": {
+    "loss": 1.9923008531332016,
+    "n": 16384,
+    "accuracy": 0.4114990234375,
+    "bits_per_character": 2.874282560774121
+  },
+  "sample": "ROMEO:\nPone Whe your her, row son chost low;\nMast asund a mint the beand the seear's,\nThe a the this con'sernot rear wor cene\nFrow a whe love dood frace hou thim held hise;\nI welll hand sthen thate inguend the thathou lith\nstarchat mier than re do",
+  "checkpoint": "results/checkpoints/language_standard_1.pt",
+  "reload_loss_error": 0.0
+}

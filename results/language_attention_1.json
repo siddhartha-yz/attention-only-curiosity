@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "attention",
+  "seed": 1,
+  "config": {
+    "task": "language",
+    "variant": "attention",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 45568,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.456645503640175,
+      "n": 65536,
+      "accuracy": 0.009857177734375,
+      "bits_per_character": 6.429580367101777
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.24149580001540016,
+      "loss": 2.481397546827793,
+      "n": 65536,
+      "accuracy": 0.2828826904296875,
+      "bits_per_character": 3.5798999352824965
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.4832968950140639,
+      "loss": 2.351200968027115,
+      "n": 65536,
+      "accuracy": 0.3160400390625,
+      "bits_per_character": 3.392065976706049
+    },
+    {
+      "step": 600,
+      "train_seconds": 0.723714994997863,
+      "loss": 2.289370946586132,
+      "n": 65536,
+      "accuracy": 0.3298797607421875,
+      "bits_per_character": 3.3028641113950847
+    },
+    {
+      "step": 800,
+      "train_seconds": 0.9663522469745658,
+      "loss": 2.2623573541641235,
+      "n": 65536,
+      "accuracy": 0.33807373046875,
+      "bits_per_character": 3.2638917355712573
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 0.9663522469745658,
+    "loss": 2.2623573541641235,
+    "n": 65536,
+    "accuracy": 0.33807373046875,
+    "bits_per_character": 3.2638917355712573
+  },
+  "training_seconds": 0.9663522469745658,
+  "wall_seconds": 1.0124949099990772,
+  "peak_allocated_mib": 85.94287109375,
+  "train_probe": {
+    "loss": 2.2228733003139496,
+    "n": 16384,
+    "accuracy": 0.351806640625,
+    "bits_per_character": 3.2069282868874187
+  },
+  "sample": "ROMEO:\nCon me, is or the, ro buna chermals the\nAnd aund and bure labe the blose athil?\n\nNGVILIO:\nLOF Whacn the sod shall's thim wach wat lothe mott,\nhir move him hele hangt ise mer handest the youe ing\nAnd to fon paous mthalld chat mefobl grer; do",
+  "checkpoint": "results/checkpoints/language_attention_1.pt",
+  "reload_loss_error": 0.0
+}

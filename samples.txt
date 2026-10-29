@@ -1,0 +1,43 @@
+固定展示：seed 0；同一提示 ROMEO:；温度 0.8；采样种子 777；各生成 240 字符。
+
+===== 标准 Transformer =====
+ROMEO:
+Pone Was you has yord butate mart bot we blake my cand o hearfom.
+
+MEO:
+Cay I, seeve this blonce, net, the shim I's welm;
+So ford would motter co my yourd yold hatet
+The mard and sthen thate ing;
+And be thathou lith hour hat my to to sre do
+
+===== 纯 Attention（2 层） =====
+ROMEO:
+Coneve, is o his the the a chormall the
+And aund acaint the beand to polis hilles matt the con
+Toun the srda hay ccene meand for gisthe mott,
+To the you mor line betcous mardeand sutt
+Toy ta you pla por to paousstt ant to at mof
+ble germ do
+
+===== 纯 Attention（6 层，参数接近） =====
+ROMEO:
+Cond Wa ifdor the hrom son comamzes to to be unce
+To burt labfon coblesed, hille hal the theance tom.
+
+Yords ENRIZAR:
+Am wath wat loused, to tho the the me wid hatet
+The mer dand sthen grate ing plast sing pank lith hoden:
+I my the wis my t
+
+===== Attention＋可学习记忆 =====
+ROMEO:
+Con braris or the hro bu a chormall the sou aund andind the beand.
+
+
+ORDCMANIIO:
+Nop the thin ce tom.
+
+Y SSCLENNIZAR:
+Am waca wing my comout, hor my y
+OLou wid hangtcour my digntes, the yate ing;
+An toust seank lit alldechet my touce str do

@@ -1,0 +1,79 @@
+{
+  "task": "lookup",
+  "variant": "attention_matched",
+  "seed": 1,
+  "config": {
+    "task": "lookup",
+    "variant": "attention_matched",
+    "width": 64,
+    "layers": 6,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 24,
+    "context": 13
+  },
+  "parameters": 102080,
+  "settings": {
+    "steps": 1000,
+    "batch": 128,
+    "learning_rate": 0.001,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 2.150716468691826,
+      "n": 4096,
+      "accuracy": 0.11669921875
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.45523168901127065,
+      "loss": 1.5618744641542435,
+      "n": 4096,
+      "accuracy": 0.341552734375
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.9052442620268266,
+      "loss": 1.4686375185847282,
+      "n": 4096,
+      "accuracy": 0.35009765625
+    },
+    {
+      "step": 600,
+      "train_seconds": 1.3584614569845144,
+      "loss": 1.4487182945013046,
+      "n": 4096,
+      "accuracy": 0.36572265625
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.8082281009956205,
+      "loss": 1.4313452765345573,
+      "n": 4096,
+      "accuracy": 0.37060546875
+    },
+    {
+      "step": 1000,
+      "train_seconds": 2.2611574979891884,
+      "loss": 1.4248399958014488,
+      "n": 4096,
+      "accuracy": 0.37109375
+    }
+  ],
+  "final": {
+    "step": 1000,
+    "train_seconds": 2.2611574979891884,
+    "loss": 1.4248399958014488,
+    "n": 4096,
+    "accuracy": 0.37109375
+  },
+  "training_seconds": 2.2611574979891884,
+  "wall_seconds": 2.33547780599838,
+  "peak_allocated_mib": 100.61865234375,
+  "checkpoint": "results/checkpoints/lookup_attention_matched_1.pt",
+  "reload_loss_error": 0.0
+}

@@ -1,0 +1,164 @@
+{
+  "posthoc": "reference calculations only, no training or checkpoint selection",
+  "language": {
+    "uniform_bpc": 6.022367813028454,
+    "train_unigram_bpc": 4.831191387120918,
+    "train_bigram_bpc": 3.5794827593685135,
+    "smoothing": "add-one; train split only",
+    "evaluated_character_targets": 65536
+  },
+  "lookup": {
+    "uniform_accuracy": 0.125,
+    "ignore_query_choose_most_frequent_value_accuracy": 0.36767578125,
+    "first_four_fixed_examples_seed0": [
+      {
+        "pairs": [
+          [
+            8,
+            7
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            11,
+            7
+          ]
+        ],
+        "query_key": 10,
+        "answer": 3,
+        "predictions": {
+          "standard": 3,
+          "attention": 3,
+          "attention_matched": 3,
+          "memory": 7
+        }
+      },
+      {
+        "pairs": [
+          [
+            10,
+            0
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            13,
+            7
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "query_key": 1,
+        "answer": 6,
+        "predictions": {
+          "standard": 6,
+          "attention": 6,
+          "attention_matched": 6,
+          "memory": 6
+        }
+      },
+      {
+        "pairs": [
+          [
+            10,
+            7
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            14,
+            4
+          ],
+          [
+            15,
+            5
+          ]
+        ],
+        "query_key": 9,
+        "answer": 3,
+        "predictions": {
+          "standard": 3,
+          "attention": 3,
+          "attention_matched": 3,
+          "memory": 3
+        }
+      },
+      {
+        "pairs": [
+          [
+            2,
+            4
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "query_key": 11,
+        "answer": 5,
+        "predictions": {
+          "standard": 5,
+          "attention": 5,
+          "attention_matched": 5,
+          "memory": 2
+        }
+      }
+    ]
+  },
+  "absolute": {
+    "best_affine_grid_mse": 0.08350025862455368
+  },
+  "protocol_source_hash_verified": true
+}

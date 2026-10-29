@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "memory",
+  "seed": 2,
+  "config": {
+    "task": "language",
+    "variant": "memory",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 256,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 111104,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.327982559800148,
+      "n": 65536,
+      "accuracy": 0.0176544189453125,
+      "bits_per_character": 6.243958976077595
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.31925118904473493,
+      "loss": 2.505110926926136,
+      "n": 65536,
+      "accuracy": 0.27398681640625,
+      "bits_per_character": 3.614111111153091
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.63833427706777,
+      "loss": 2.408577173948288,
+      "n": 65536,
+      "accuracy": 0.294677734375,
+      "bits_per_character": 3.4748423444535494
+    },
+    {
+      "step": 600,
+      "train_seconds": 0.9576658371188387,
+      "loss": 2.351771757006645,
+      "n": 65536,
+      "accuracy": 0.3092498779296875,
+      "bits_per_character": 3.3928894511362113
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.275976864151744,
+      "loss": 2.3260497376322746,
+      "n": 65536,
+      "accuracy": 0.3168182373046875,
+      "bits_per_character": 3.355780421343157
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 1.275976864151744,
+    "loss": 2.3260497376322746,
+    "n": 65536,
+    "accuracy": 0.3168182373046875,
+    "bits_per_character": 3.355780421343157
+  },
+  "training_seconds": 1.275976864151744,
+  "wall_seconds": 1.3458717430003162,
+  "peak_allocated_mib": 101.8701171875,
+  "train_probe": {
+    "loss": 2.2844513058662415,
+    "n": 16384,
+    "accuracy": 0.328857421875,
+    "bits_per_character": 3.295766570125543
+  },
+  "sample": "ROMEO:\nThe bWhe y orer'l, ro bura chermallour t blatunme cound the bfounce anse\nat hene hal this blonce tomend s da hay corir\nFrd ca wing othe mooucth is me thim heline betou we hid\nand sththe youe ingas d poring pank lit alourches m foble nerm do",
+  "checkpoint": "results/checkpoints/language_memory_2.pt",
+  "reload_loss_error": 0.0
+}

@@ -1,0 +1,79 @@
+{
+  "task": "lookup",
+  "variant": "memory",
+  "seed": 2,
+  "config": {
+    "task": "lookup",
+    "variant": "memory",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 256,
+    "norms": true,
+    "vocab": 24,
+    "context": 13
+  },
+  "parameters": 101568,
+  "settings": {
+    "steps": 1000,
+    "batch": 128,
+    "learning_rate": 0.001,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 2.192163810133934,
+      "n": 4096,
+      "accuracy": 0.1171875
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.7466809270117665,
+      "loss": 1.531371422111988,
+      "n": 4096,
+      "accuracy": 0.348876953125
+    },
+    {
+      "step": 400,
+      "train_seconds": 1.493809459017939,
+      "loss": 1.460792414844036,
+      "n": 4096,
+      "accuracy": 0.35791015625
+    },
+    {
+      "step": 600,
+      "train_seconds": 2.242020545025298,
+      "loss": 1.4535727873444557,
+      "n": 4096,
+      "accuracy": 0.353271484375
+    },
+    {
+      "step": 800,
+      "train_seconds": 2.9872637440566905,
+      "loss": 1.433505855500698,
+      "n": 4096,
+      "accuracy": 0.361328125
+    },
+    {
+      "step": 1000,
+      "train_seconds": 3.733308922066499,
+      "loss": 1.4260222017765045,
+      "n": 4096,
+      "accuracy": 0.356689453125
+    }
+  ],
+  "final": {
+    "step": 1000,
+    "train_seconds": 3.733308922066499,
+    "loss": 1.4260222017765045,
+    "n": 4096,
+    "accuracy": 0.356689453125
+  },
+  "training_seconds": 3.733308922066499,
+  "wall_seconds": 3.874545473998296,
+  "peak_allocated_mib": 140.8544921875,
+  "checkpoint": "results/checkpoints/lookup_memory_2.pt",
+  "reload_loss_error": 0.0
+}

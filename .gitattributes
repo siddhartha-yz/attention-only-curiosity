@@ -1,0 +1,9 @@
+# Preserve the upstream dataset and original CSV bytes used by the manifests.
+data/tinyshakespeare.txt -text whitespace=-blank-at-eol
+runs.csv -text whitespace=cr-at-eol
+results/checkpoints/*.pt -text
+*.png -text
+*.pdf -text
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf

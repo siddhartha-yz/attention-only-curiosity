@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "memory",
+  "seed": 1,
+  "config": {
+    "task": "language",
+    "variant": "memory",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 256,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 111104,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.290831506252289,
+      "n": 65536,
+      "accuracy": 0.0101318359375,
+      "bits_per_character": 6.190361335360299
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.3208437179600878,
+      "loss": 2.4897534623742104,
+      "n": 65536,
+      "accuracy": 0.2742462158203125,
+      "bits_per_character": 3.5919549732034
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.6410573539651523,
+      "loss": 2.3641008511185646,
+      "n": 65536,
+      "accuracy": 0.308197021484375,
+      "bits_per_character": 3.410676574070131
+    },
+    {
+      "step": 600,
+      "train_seconds": 0.9601850319741061,
+      "loss": 2.3172300159931183,
+      "n": 65536,
+      "accuracy": 0.3183746337890625,
+      "bits_per_character": 3.343056252672325
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.279398828974081,
+      "loss": 2.297244355082512,
+      "n": 65536,
+      "accuracy": 0.3236846923828125,
+      "bits_per_character": 3.314223038787705
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 1.279398828974081,
+    "loss": 2.297244355082512,
+    "n": 65536,
+    "accuracy": 0.3236846923828125,
+    "bits_per_character": 3.314223038787705
+  },
+  "training_seconds": 1.279398828974081,
+  "wall_seconds": 1.350285234999319,
+  "peak_allocated_mib": 101.8701171875,
+  "train_probe": {
+    "loss": 2.249259442090988,
+    "n": 16384,
+    "accuracy": 0.33770751953125,
+    "bits_per_character": 3.2449954427773453
+  },
+  "sample": "ROMEO:\nCon brarisdom the, ro bu a cheam sow;\nMas be und aknd the louf halid pold thil?\n\nNGFLLOULA:\nFre conmand shas hall's thim wach wheris hermot fus is me thim heline bet\nThe mar haneveld nouy te ing\nAnd pur thathous mt alourche am fobll nerm do",
+  "checkpoint": "results/checkpoints/language_memory_1.pt",
+  "reload_loss_error": 0.0
+}

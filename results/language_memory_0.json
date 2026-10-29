@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "memory",
+  "seed": 0,
+  "config": {
+    "task": "language",
+    "variant": "memory",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 256,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 111104,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.344398111104965,
+      "n": 65536,
+      "accuracy": 0.016845703125,
+      "bits_per_character": 6.267641610538513
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.3175634739891393,
+      "loss": 2.514502242207527,
+      "n": 65536,
+      "accuracy": 0.2662506103515625,
+      "bits_per_character": 3.6276599151369786
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.635255296008836,
+      "loss": 2.3881381303071976,
+      "n": 65536,
+      "accuracy": 0.3021697998046875,
+      "bits_per_character": 3.445355037552035
+    },
+    {
+      "step": 600,
+      "train_seconds": 0.9541944320189941,
+      "loss": 2.304310105741024,
+      "n": 65536,
+      "accuracy": 0.3208160400390625,
+      "bits_per_character": 3.3244167622228984
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.2731915220429073,
+      "loss": 2.2779048830270767,
+      "n": 65536,
+      "accuracy": 0.325775146484375,
+      "bits_per_character": 3.286322078359918
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 1.2731915220429073,
+    "loss": 2.2779048830270767,
+    "n": 65536,
+    "accuracy": 0.325775146484375,
+    "bits_per_character": 3.286322078359918
+  },
+  "training_seconds": 1.2731915220429073,
+  "wall_seconds": 1.342338911999832,
+  "peak_allocated_mib": 101.8701171875,
+  "train_probe": {
+    "loss": 2.230980485677719,
+    "n": 16384,
+    "accuracy": 0.34051513671875,
+    "bits_per_character": 3.2186244830072965
+  },
+  "sample": "ROMEO:\nCon braris or the hro bu a chormall the sou aund andind the beand.\n\n\nORDCMANIIO:\nNop the thin ce tom.\n\nY SSCLENNIZAR:\nAm waca wing my comout, hor my y\nOLou wid hangtcour my digntes, the yate ing;\nAn toust seank lit alldechet my touce str do",
+  "checkpoint": "results/checkpoints/language_memory_0.pt",
+  "reload_loss_error": 0.0
+}

@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "attention_matched",
+  "seed": 0,
+  "config": {
+    "task": "language",
+    "variant": "attention_matched",
+    "width": 64,
+    "layers": 6,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 111616,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.396938368678093,
+      "n": 65536,
+      "accuracy": 0.008056640625,
+      "bits_per_character": 6.343441179586294
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.43813243399199564,
+      "loss": 2.4817405343055725,
+      "n": 65536,
+      "accuracy": 0.2854461669921875,
+      "bits_per_character": 3.580394761615776
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.8759259700018447,
+      "loss": 2.2814993858337402,
+      "n": 65536,
+      "accuracy": 0.33544921875,
+      "bits_per_character": 3.291507849733553
+    },
+    {
+      "step": 600,
+      "train_seconds": 1.3277175250113942,
+      "loss": 2.1882966682314873,
+      "n": 65536,
+      "accuracy": 0.3613433837890625,
+      "bits_per_character": 3.157044751251408
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.7613172569654125,
+      "loss": 2.1538916379213333,
+      "n": 65536,
+      "accuracy": 0.3694610595703125,
+      "bits_per_character": 3.1074087846413145
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 1.7613172569654125,
+    "loss": 2.1538916379213333,
+    "n": 65536,
+    "accuracy": 0.3694610595703125,
+    "bits_per_character": 3.1074087846413145
+  },
+  "training_seconds": 1.7613172569654125,
+  "wall_seconds": 1.8450416490013595,
+  "peak_allocated_mib": 99.3994140625,
+  "train_probe": {
+    "loss": 2.1004036962985992,
+    "n": 16384,
+    "accuracy": 0.3837890625,
+    "bits_per_character": 3.0302419965148375
+  },
+  "sample": "ROMEO:\nCond Wa ifdor the hrom son comamzes to to be unce\nTo burt labfon coblesed, hille hal the theance tom.\n\nYords ENRIZAR:\nAm wath wat loused, to tho the the me wid hatet\nThe mer dand sthen grate ing plast sing pank lith hoden:\nI my the wis my t",
+  "checkpoint": "results/checkpoints/language_attention_matched_0.pt",
+  "reload_loss_error": 0.0
+}

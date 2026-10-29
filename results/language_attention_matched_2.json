@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "attention_matched",
+  "seed": 2,
+  "config": {
+    "task": "language",
+    "variant": "attention_matched",
+    "width": 64,
+    "layers": 6,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 111616,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.279492169618607,
+      "n": 65536,
+      "accuracy": 0.014404296875,
+      "bits_per_character": 6.174002130631915
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.43976197301162756,
+      "loss": 2.4951591938734055,
+      "n": 65536,
+      "accuracy": 0.281036376953125,
+      "bits_per_character": 3.599753795229666
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.8798695280092943,
+      "loss": 2.318446546792984,
+      "n": 65536,
+      "accuracy": 0.3226470947265625,
+      "bits_per_character": 3.3448113356243803
+    },
+    {
+      "step": 600,
+      "train_seconds": 1.3203863910384825,
+      "loss": 2.23688255995512,
+      "n": 65536,
+      "accuracy": 0.344940185546875,
+      "bits_per_character": 3.227139376298261
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.760394058030215,
+      "loss": 2.1988160610198975,
+      "n": 65536,
+      "accuracy": 0.3572998046875,
+      "bits_per_character": 3.1722210270604103
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 1.760394058030215,
+    "loss": 2.1988160610198975,
+    "n": 65536,
+    "accuracy": 0.3572998046875,
+    "bits_per_character": 3.1722210270604103
+  },
+  "training_seconds": 1.760394058030215,
+  "wall_seconds": 1.842906657999265,
+  "peak_allocated_mib": 99.3994140625,
+  "train_probe": {
+    "loss": 2.1526233553886414,
+    "n": 16384,
+    "accuracy": 0.3740234375,
+    "bits_per_character": 3.1055790397209537
+  },
+  "sample": "ROMEO:\nThe may ifdor the hrot son chermasson.\n\nARIV:\nWhe count the ben nead:\nCed, hous mene this blonce there to dak word ane\nme ach wat lovee moot, hor my yous dighe nougt.\n\nWhingorglld ththe y ta yours deans thath:\nAlmt ant to be mifobllons my t",
+  "checkpoint": "results/checkpoints/language_attention_matched_2.pt",
+  "reload_loss_error": 0.0
+}

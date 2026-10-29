@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "standard",
+  "seed": 2,
+  "config": {
+    "task": "language",
+    "variant": "standard",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 111360,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.286476507782936,
+      "n": 65536,
+      "accuracy": 0.0238189697265625,
+      "bits_per_character": 6.184078400665484
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.30675564298508107,
+      "loss": 2.4123531579971313,
+      "n": 65536,
+      "accuracy": 0.2945404052734375,
+      "bits_per_character": 3.4802899379152916
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.6107797860022401,
+      "loss": 2.2397176176309586,
+      "n": 65536,
+      "accuracy": 0.3427734375,
+      "bits_per_character": 3.2312294999478275
+    },
+    {
+      "step": 600,
+      "train_seconds": 0.9192657810090168,
+      "loss": 2.1405912935733795,
+      "n": 65536,
+      "accuracy": 0.3686065673828125,
+      "bits_per_character": 3.0882204438084058
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.227150390008319,
+      "loss": 2.0921799167990685,
+      "n": 65536,
+      "accuracy": 0.37969970703125,
+      "bits_per_character": 3.0183775906135004
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 1.227150390008319,
+    "loss": 2.0921799167990685,
+    "n": 65536,
+    "accuracy": 0.37969970703125,
+    "bits_per_character": 3.0183775906135004
+  },
+  "training_seconds": 1.227150390008319,
+  "wall_seconds": 1.286312538999482,
+  "peak_allocated_mib": 95.2333984375,
+  "train_probe": {
+    "loss": 2.018435478210449,
+    "n": 16384,
+    "accuracy": 0.4014892578125,
+    "bits_per_character": 2.9119868547685583
+  },
+  "sample": "ROMEO:\nThe my, if of the have son comame\nGod was I bund and not hearfer coblesed,\nNo, she arly strience, nothe shall wor'sere mest a warglooted\not thar brob thim he deestercien my ougneds,\nthe you will pid to for paok'stter tarcher my to coner; hi",
+  "checkpoint": "results/checkpoints/language_standard_2.pt",
+  "reload_loss_error": 0.0
+}

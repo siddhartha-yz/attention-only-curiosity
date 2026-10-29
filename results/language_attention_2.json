@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "attention",
+  "seed": 2,
+  "config": {
+    "task": "language",
+    "variant": "attention",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 45568,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.376960471272469,
+      "n": 65536,
+      "accuracy": 0.011932373046875,
+      "bits_per_character": 6.314619166071811
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.24203023099835264,
+      "loss": 2.488566517829895,
+      "n": 65536,
+      "accuracy": 0.279541015625,
+      "bits_per_character": 3.5902425741955057
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.48292790599225555,
+      "loss": 2.3587630465626717,
+      "n": 65536,
+      "accuracy": 0.3110809326171875,
+      "bits_per_character": 3.4029757499081095
+    },
+    {
+      "step": 600,
+      "train_seconds": 0.7247344929892279,
+      "loss": 2.2913797795772552,
+      "n": 65536,
+      "accuracy": 0.330413818359375,
+      "bits_per_character": 3.3057622447893524
+    },
+    {
+      "step": 800,
+      "train_seconds": 0.9675194689953059,
+      "loss": 2.265798956155777,
+      "n": 65536,
+      "accuracy": 0.338897705078125,
+      "bits_per_character": 3.2688569176973292
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 0.9675194689953059,
+    "loss": 2.265798956155777,
+    "n": 65536,
+    "accuracy": 0.338897705078125,
+    "bits_per_character": 3.2688569176973292
+  },
+  "training_seconds": 0.9675194689953059,
+  "wall_seconds": 1.0129819930007216,
+  "peak_allocated_mib": 85.94287109375,
+  "train_probe": {
+    "loss": 2.216025412082672,
+    "n": 16384,
+    "accuracy": 0.3525390625,
+    "bits_per_character": 3.1970488724955928
+  },
+  "sample": "ROMEO:\nConeve, ifdor the hro bugat hermass there be unmen:\nTot the bfor coblese athil?\n\nNGatt thighe ce tnerent ras hall's well waca wat loveed!\nGof hor move tha he deranetcoue mer hand sthand youe ing\nAnd tor thathous mt ant toout my the aner; ha",
+  "checkpoint": "results/checkpoints/language_attention_2.pt",
+  "reload_loss_error": 0.0
+}

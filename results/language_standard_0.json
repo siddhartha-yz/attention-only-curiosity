@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "standard",
+  "seed": 0,
+  "config": {
+    "task": "language",
+    "variant": "standard",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 111360,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.322049006819725,
+      "n": 65536,
+      "accuracy": 0.0108795166015625,
+      "bits_per_character": 6.235398668617887
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.3062031130066316,
+      "loss": 2.4006382152438164,
+      "n": 65536,
+      "accuracy": 0.30078125,
+      "bits_per_character": 3.4633888481007857
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.6137079980144335,
+      "loss": 2.209357127547264,
+      "n": 65536,
+      "accuracy": 0.3499755859375,
+      "bits_per_character": 3.187428571465123
+    },
+    {
+      "step": 600,
+      "train_seconds": 0.9207817509886809,
+      "loss": 2.0938419103622437,
+      "n": 65536,
+      "accuracy": 0.3801422119140625,
+      "bits_per_character": 3.0207753404850823
+    },
+    {
+      "step": 800,
+      "train_seconds": 1.224617866009794,
+      "loss": 2.0524105951189995,
+      "n": 65536,
+      "accuracy": 0.3892669677734375,
+      "bits_per_character": 2.961002587446147
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 1.224617866009794,
+    "loss": 2.0524105951189995,
+    "n": 65536,
+    "accuracy": 0.3892669677734375,
+    "bits_per_character": 2.961002587446147
+  },
+  "training_seconds": 1.224617866009794,
+  "wall_seconds": 1.2846544519998133,
+  "peak_allocated_mib": 95.2333984375,
+  "train_probe": {
+    "loss": 1.9695222675800323,
+    "n": 16384,
+    "accuracy": 0.417236328125,
+    "bits_per_character": 2.841420008358099
+  },
+  "sample": "ROMEO:\nPone Was you has yord butate mart bot we blake my cand o hearfom.\n\nMEO:\nCay I, seeve this blonce, net, the shim I's welm;\nSo ford would motter co my yourd yold hatet\nThe mard and sthen thate ing;\nAnd be thathou lith hour hat my to to sre do",
+  "checkpoint": "results/checkpoints/language_standard_0.pt",
+  "reload_loss_error": 0.0
+}

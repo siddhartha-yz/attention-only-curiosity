@@ -1,0 +1,85 @@
+{
+  "task": "language",
+  "variant": "attention",
+  "seed": 0,
+  "config": {
+    "task": "language",
+    "variant": "attention",
+    "width": 64,
+    "layers": 2,
+    "heads": 4,
+    "memory_slots": 0,
+    "norms": true,
+    "vocab": 65,
+    "context": 64
+  },
+  "parameters": 45568,
+  "settings": {
+    "steps": 800,
+    "batch": 32,
+    "learning_rate": 0.0015,
+    "evaluate_every": 200
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_seconds": 0.0,
+      "loss": 4.39875240623951,
+      "n": 65536,
+      "accuracy": 0.01361083984375,
+      "bits_per_character": 6.3460582825801355
+    },
+    {
+      "step": 200,
+      "train_seconds": 0.24249041298025986,
+      "loss": 2.494632124900818,
+      "n": 65536,
+      "accuracy": 0.282379150390625,
+      "bits_per_character": 3.598993395436707
+    },
+    {
+      "step": 400,
+      "train_seconds": 0.48405878098128596,
+      "loss": 2.3476415053009987,
+      "n": 65536,
+      "accuracy": 0.317474365234375,
+      "bits_per_character": 3.386930757482852
+    },
+    {
+      "step": 600,
+      "train_seconds": 0.7248461809685978,
+      "loss": 2.2692253813147545,
+      "n": 65536,
+      "accuracy": 0.3380126953125,
+      "bits_per_character": 3.2738002042821632
+    },
+    {
+      "step": 800,
+      "train_seconds": 0.9667147839718382,
+      "loss": 2.2396626845002174,
+      "n": 65536,
+      "accuracy": 0.344818115234375,
+      "bits_per_character": 3.231150248192527
+    }
+  ],
+  "final": {
+    "step": 800,
+    "train_seconds": 0.9667147839718382,
+    "loss": 2.2396626845002174,
+    "n": 65536,
+    "accuracy": 0.344818115234375,
+    "bits_per_character": 3.231150248192527
+  },
+  "training_seconds": 0.9667147839718382,
+  "wall_seconds": 1.0123129290004726,
+  "peak_allocated_mib": 85.94287109375,
+  "train_probe": {
+    "loss": 2.1990737915039062,
+    "n": 16384,
+    "accuracy": 0.3564453125,
+    "bits_per_character": 3.172592853551576
+  },
+  "sample": "ROMEO:\nConeve, is o his the the a chormall the\nAnd aund acaint the beand to polis hilles matt the con\nToun the srda hay ccene meand for gisthe mott,\nTo the you mor line betcous mardeand sutt\nToy ta you pla por to paousstt ant to at mof\nble germ do",
+  "checkpoint": "results/checkpoints/language_attention_0.pt",
+  "reload_loss_error": 0.0
+}
